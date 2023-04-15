@@ -43,6 +43,11 @@ export default {
     this.getEvents();
   },
 
+  beforeMount() {
+    const linkOfTheWebsiteUserCame = document.referrer;
+    console.log("dateng dari sini", linkOfTheWebsiteUserCame)  
+  },
+
   methods: {
     ...mapActions(['getEvents']),
   },
